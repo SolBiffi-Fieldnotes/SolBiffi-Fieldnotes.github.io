@@ -4,26 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Libreta de campo</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem 1.25rem;
-      background: #f1e9d6;
-      color: #3b3a2f;
-      font-family: "Century Gothic", "Trebuchet MS", sans-serif;
-      line-height: 1.6;
-    }
-    h1 { color: #4f5d3a; margin-top: 0; }
-    .aviso {
-      border-left: 4px solid #8a6a4a;
-      padding-left: 1rem;
-      color: #5c6b78;
-    }
-  </style>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <h1>Libreta de campo</h1>
-  <p>Zoología, biodiversidad y fotografía de naturaleza.</p>
-  <p class="aviso">Página en construcción: esta es una prueba inicial.</p>
+  <header class="cabecera">
+    <h1 class="titulo-sitio">Libreta de campo</h1>
+    <p class="subtitulo">Zoología · biodiversidad · fotografía de naturaleza</p>
+  </header>
+
+  <nav class="menu" aria-label="Secciones">
+    <a href="#inicio" data-seccion="inicio">Inicio</a>
+    <a href="#territorio" data-seccion="territorio">Territorio</a>
+    <a href="#paleontologia" data-seccion="paleontologia">Paleontología</a>
+    <a href="#especies" data-seccion="especies">Especies</a>
+    <a href="#cuaderno" data-seccion="cuaderno">Cuaderno</a>
+    <a href="#portfolio" data-seccion="portfolio">Portfolio</a>
+    <a href="#sobre-mi" data-seccion="sobre-mi">Sobre mí</a>
+  </nav>
+
+  <main>
+    <section id="inicio" class="seccion">
+      <h2>Inicio</h2>
+      <p>Libreta de campo digital de una estudiante de Zoología: registros, apuntes y trabajo con fauna silvestre.</p>
+      <p class="en-desarrollo">Texto provisional: lo vamos a reemplazar por tu presentación.</p>
+      <div class="foto-pendiente">Foto destacada pendiente (se reemplaza por una de tus fotos)</div>
+      <div class="tarjetas">
+        <a class="tarjeta" href="#territorio"><strong>Territorio y conservación</strong><span>Mapa de áreas protegidas</span></a>
+        <a class="tarjeta" href="#paleontologia"><strong>Paleontología</strong><span>Organismos extintos por época</span></a>
+        <a class="tarjeta" href="#especies"><strong>Especies registradas</strong><span>Observaciones y fichas</span></a>
+        <a class="tarjeta" href="#cuaderno"><strong>Cuaderno de aprendizaje</strong><span>Apuntes de estudio</span></a>
+        <a class="tarjeta" href="#portfolio"><strong>Portfolio profesional</strong><span>Fotografías y proyectos</span></a>
+        <a class="tarjeta" href="#sobre-mi"><strong>Sobre mí y contacto</strong><span>Formación e intereses</span></a>
+      </div>
+    </section>
+
+    <section id="territorio" class="seccion" hidden>
+      <h2>Territorio y conservación</h2>
+      <p class="en-desarrollo">En desarrollo. Acá va a ir el mapa de Argentina con áreas protegidas seleccionables.</p>
+    </section>
+
+    <section id="paleontologia" class="seccion" hidden>
+      <h2>Paleontología</h2>
+      <p class="en-desarrollo">En desarrollo. Archivo de organismos extintos ordenado por eones, eras, períodos y épocas.</p>
+    </section>
+
+    <section id="especies" class="seccion" hidden>
+      <h2>Especies registradas</h2>
+      <p class="en-desarrollo">En desarrollo. Catálogo con fichas de especies observadas o fotografiadas.</p>
+    </section>
+
+    <section id="cuaderno" class="seccion" hidden>
+      <h2>Cuaderno de aprendizaje</h2>
+      <p class="en-desarrollo">En desarrollo. Apuntes de zoología, anatomía comparada, evolución, ecología y fisiología.</p>
+    </section>
+
+    <section id="portfolio" class="seccion" hidden>
+      <h2>Portfolio profesional</h2>
+      <p class="en-desarrollo">En desarrollo. Selección de fotografías, láminas, experiencias de campo y proyectos.</p>
+    </section>
+
+    <section id="sobre-mi" class="seccion" hidden>
+      <h2>Sobre mí y contacto</h2>
+      <p class="en-desarrollo">En desarrollo. Formación en Biología con orientación en Zoología, intereses y contacto.</p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</main>
 </body>
 </html>
