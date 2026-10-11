@@ -1,0 +1,99 @@
+:root {
+  --crema: #f1e9d6;
+  --crema-oscuro: #e6dcc3;
+  --papel: #f7f1e1;
+  --musgo: #4f5d3a;
+  --salvia: #9caf88;
+  --azul: #5c6b78;
+  --tierra: #8a6a4a;
+  --texto: #3b3a2f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--texto);
+  font-family: "Century Gothic", "Avenir", "Trebuchet MS", sans-serif;
+  line-height: 1.6;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--tierra);
+  outline-offset: 2px;
+}
+
+.cabecera {
+  padding: 1.5rem 1.25rem 1rem;
+  border-bottom: 2px solid var(--tierra);
+}
+.titulo-sitio { margin: 0; color: var(--musgo); font-size: 1.75rem; }
+.subtitulo { margin: 0.25rem 0 0; color: var(--azul); font-size: 0.95rem; }
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.6rem 1rem;
+  background: var(--crema-oscuro);
+  border-bottom: 1px solid var(--salvia);
+}
+.menu a {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 1rem;
+  border-radius: 999px;
+  color: var(--musgo);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.menu a.activa { background: var(--musgo); color: var(--crema); }
+
+main { max-width: 60rem; margin: 0 auto; padding: 1.25rem; }
+.seccion[hidden] { display: none; }
+h2 { margin-top: 0; color: var(--musgo); }
+
+.foto-pendiente {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  color: var(--azul);
+  background: var(--crema-oscuro);
+  border: 2px dashed var(--salvia);
+  border-radius: 0.5rem;
+}
+
+.tarjetas { display: grid; gap: 0.75rem; grid-template-columns: 1fr; }
+.tarjeta {
+  display: block;
+  padding: 1rem;
+  background: var(--papel);
+  border: 1px solid var(--salvia);
+  border-radius: 0.5rem;
+  color: var(--texto);
+  text-decoration: none;
+}
+.tarjeta strong { display: block; color: var(--musgo); }
+.tarjeta span { color: var(--azul); font-size: 0.9rem; }
+
+.en-desarrollo {
+  padding: 0.75rem 1rem;
+  background: var(--papel);
+  border-left: 4px solid var(--tierra);
+  color: var(--azul);
+}
+
+@media (min-width: 700px) {
+  .cabecera { padding: 2rem; }
+  .tarjetas { grid-template-columns: repeat(2, 1fr); }
+}
