@@ -3,7 +3,7 @@ const secciones = document.querySelectorAll(".seccion");
 const enlaces = document.querySelectorAll(".menu a");
 
 function mostrarSeccion() {
-  let id = location.hash.replace("#", "");
+  let id = location.hash.replace("#", "").split("/")[0];
   if (!document.getElementById(id)) id = "inicio";
 
   secciones.forEach(function (seccion) {
