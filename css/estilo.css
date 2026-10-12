@@ -97,3 +97,22 @@ h2 { margin-top: 0; color: var(--musgo); }
   .cabecera { padding: 2rem; }
   .tarjetas { grid-template-columns: repeat(2, 1fr); }
 }
+.miniatura { width: 100%; height: 10rem; object-fit: cover; border-radius: 0.35rem; margin-bottom: 0.5rem; display: block; }
+.cientifico { font-style: italic; }
+.volver { display: inline-block; margin-bottom: 1rem; color: var(--azul); }
+.nombre-cientifico { font-style: italic; color: var(--azul); margin-top: -0.5rem; }
+.ficha figure { margin: 0 0 1rem; }
+.ficha img { display: block; width: 100%; height: auto; border-radius: 0.5rem; }
+.ficha figcaption { margin-top: 0.35rem; font-size: 0.9rem; color: var(--azul); }
+.bloque { margin: 1.25rem 0; padding: 0.75rem 1rem; background: var(--papel); border-left: 4px solid var(--salvia); border-radius: 0.5rem; }
+.bloque h3 { margin: 0 0 0.25rem; color: var(--musgo); }
+.bloque.propia { border-left-color: var(--musgo); }
+.bloque.hipotesis { border-left-color: var(--tierra); }
+.bloque.publicado { border-left-color: var(--azul); }
+.etiqueta { display: inline-block; margin-bottom: 0.5rem; padding: 0 0.6rem; border-radius: 999px; background: var(--salvia); font-size: 0.8rem; }
+.fuente { margin-top: -0.5rem; font-size: 0.9rem; color: var(--azul); }
+.vacio { color: var(--azul); font-style: italic; }
+
+@media (min-width: 700px) {
+  .galeria { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+}
