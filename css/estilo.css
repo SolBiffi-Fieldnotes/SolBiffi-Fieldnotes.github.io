@@ -116,3 +116,4 @@ h2 { margin-top: 0; color: var(--musgo); }
 @media (min-width: 700px) {
   .galeria { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 }
+.portada { display: block; width: 100%; height: auto; margin: 0 0 1.25rem; border-radius: 0.5rem; }
