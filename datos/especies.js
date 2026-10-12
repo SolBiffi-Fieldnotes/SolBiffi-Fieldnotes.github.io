@@ -17,11 +17,11 @@ const ESPECIES = [
 
     fotos: [
       {
-        archivo: "img/puma-01.jpg",
+        archivo: "img/Puma-01.jpg",
         descripcion: "Puma de pie sobre un tronco, con la cabeza levantada y la boca entreabierta."
       },
       {
-        archivo: "img/puma-02.jpg",
+        archivo: "img/Puma-02.jpg",
         descripcion: "Retrato: cabeza y parte del cuerpo vistos desde arriba, sobre hojarasca."
       }
     ],
