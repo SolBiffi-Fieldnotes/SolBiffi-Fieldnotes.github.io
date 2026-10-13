@@ -18,7 +18,9 @@ function mostrarSeccion() {
       enlace.removeAttribute("aria-current");
     }
   });
-  window.scrollTo(0, 0);
+    if (!location.hash.startsWith("#territorio/")) {
+    window.scrollTo(0, 0);
+  }
 }
 
 window.addEventListener("hashchange", mostrarSeccion);
