@@ -1,0 +1,9 @@
+.mapa-marco { position: relative; max-width: 28rem; margin: 0 auto 0.5rem; }
+.mapa-imagen { display: block; width: 100%; height: auto; border: 3px solid var(--tierra); border-radius: 0.5rem; }
+.punto { position: absolute; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: var(--crema); border: 3px solid var(--tierra); box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35); }
+.punto.activo { z-index: 2; width: 24px; height: 24px; margin: -12px 0 0 -12px; background: var(--tierra); border-color: var(--crema); }
+.nota-mapa { margin: 0 0 1rem; font-size: 0.85rem; text-align: center; color: var(--azul); }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.chip { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.9rem; border: 1px solid var(--salvia); border-radius: 999px; background: var(--papel); color: var(--musgo); text-decoration: none; }
+.chip.activo { background: var(--musgo); color: var(--crema); }
+.ficha-reserva h3 { margin-bottom: 0.25rem; color: var(--musgo); }
